@@ -1,0 +1,28 @@
+{
+   "extends":"../tsconfig.base.json",
+   "compilerOptions":{
+      "baseUrl":"./",
+      "paths":{
+         "@infrastructure/*":[
+            "./src/app/infrastructure/*"
+         ],
+         "@domain/*":[
+            "./src/app/domain/*"
+         ],
+         "@application/*":[
+            "./src/app/application/*"
+         ],
+         "@environments/*":[
+            "./src/environments/*"
+         ],
+         "@core/*":[
+            "../core/*"
+         ]
+      }
+   },
+   "include":[
+      "src/*.ts",
+      "src/**/*.ts",
+      "src/**/*.js"
+   ]
+}
